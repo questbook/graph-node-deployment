@@ -1,0 +1,35 @@
+version: '3'
+services:
+  graph-node:
+    image: graphprotocol/graph-node:76250e9
+    ports:
+      - '8000:8000'
+      - '8001:8001'
+      - '8020:8020'
+      - '8030:8030'
+      - '8040:8040'
+    environment:
+      postgres_host: '{{postgres_host}}'
+      postgres_user: '{{postgres_user}}'
+      postgres_pass: '{{postgres_pass}}'
+      postgres_db: '{{postgres_db}}'
+      ipfs: https://api.thegraph.com/ipfs/
+      ethereum: |-
+        celo-alfajores-testnet:https://alfajores-forno.celo-testnet.org
+        harmony-testnet:https://api.s0.pops.one
+        neon-devnet:http://neon-devnet-rpc.questbook.app:9090/solana
+        optimism-kovan:https://optimism-kovan.infura.io/v3/{{infura_key}}
+        optimism-mainnet:https://optimism-mainnet.infura.io/v3/{{infura_key}}
+        polygon-mainnet:https://polygon-mainnet.infura.io/v3/{{infura_key}}
+        polygon-mainnet:https://polygon-mainnet.g.alchemy.com/v2/{{alchemy_key}}
+        polygon-mumbai:https://polygon-mumbai.infura.io/v3/{{infura_key}}
+        rinkeby:https://rinkeby.infura.io/v3/{{infura_key}}
+      GRAPH_ALLOW_NON_DETERMINISTIC_IPFS: 'true'
+      EXPERIMENTAL_SUBGRAPH_VERSION_SWITCHING_MODE: synced
+      ETHEREUM_BLOCK_BATCH_SIZE: '500'
+      GRAPH_ETHEREUM_MAX_BLOCK_RANGE_SIZE: '2500'
+      GRAPH_LOG: info
+      ETHEREUM_TRACE_STREAM_STEP_SIZE: '200'
+      ETHEREUM_POLLING_INTERVAL: '1000'
+      ETHEREUM_REORG_THRESHOLD: '1'
+      GRAPH_REMOVE_UNUSED_INTERVAL: '360'
