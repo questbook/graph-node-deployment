@@ -16,6 +16,7 @@ services:
       ipfs: https://api.thegraph.com/ipfs/
       ethereum: |-
         celo-alfajores-testnet:https://alfajores-forno.celo-testnet.org
+        harmony-mainnet:https://api.harmony.one
         harmony-testnet:https://api.s0.pops.one
         neon-devnet:http://neon-devnet-rpc.questbook.app:9090/solana
         optimism-kovan:https://optimism-kovan.infura.io/v3/{{infura_key}}
