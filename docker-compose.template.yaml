@@ -21,6 +21,8 @@ services:
 
         celo-mainnet:https://forno.celo.org
 
+        evmos-testnet:https://eth.bd.evmos.dev:8545
+
         findora-testnet:https://ev2awpyss5.execute-api.ap-south-1.amazonaws.com/v0/findora
 
         harmony-mainnet:https://api.harmony.one
