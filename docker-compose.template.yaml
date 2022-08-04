@@ -50,6 +50,10 @@ services:
         polygon-mumbai:https://polygon-mumbai.infura.io/v3/{{infura_key}}
 
         rinkeby:https://rinkeby.infura.io/v3/{{infura_key}}
+
+        telos-mainnet:https://mainnet.telos.net/evm
+
+        telos-testnet:https://testnet.telos.net/evm
       GRAPH_ALLOW_NON_DETERMINISTIC_IPFS: 'true'
       EXPERIMENTAL_SUBGRAPH_VERSION_SWITCHING_MODE: synced
       ETHEREUM_BLOCK_BATCH_SIZE: '500'
