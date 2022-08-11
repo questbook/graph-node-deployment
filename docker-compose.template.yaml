@@ -27,6 +27,8 @@ services:
 
         gnosis-mainnet:https://rpc.gnosischain.com/
 
+        goerli-testnet:https://goerli.infura.io/v3/{{infura_key}}
+
         harmony-mainnet:https://api.harmony.one
 
         harmony-testnet:https://api.s0.pops.one
