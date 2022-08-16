@@ -39,6 +39,10 @@ services:
 
         kovan:https://kovan.infura.io/v3/{{infura_key}}
 
+        metis-mainnet:https://andromeda.metis.io/?owner=1088
+
+        metis-testnet:https://stardust.metis.io/?owner=588
+
         moonbase-alpha:https://rpc.api.moonbase.moonbeam.network
 
         neon-devnet:http://neon-devnet-rpc.questbook.app:9090/solana
