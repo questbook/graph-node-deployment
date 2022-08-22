@@ -13,7 +13,7 @@ services:
       postgres_user: '{{postgres_user}}'
       postgres_pass: '{{postgres_pass}}'
       postgres_db: '{{postgres_db}}'
-      ipfs: https://23dkRmPzbs1kO428FXH3wexRdAH:{{infura_ipfs_key}}@ipfs.infura.io:5001/
+      ipfs: https://api.thegraph.com/ipfs/
       ethereum: >-
         aurora-testnet:https://testnet.aurora.dev/
 
