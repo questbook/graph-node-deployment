@@ -14,54 +14,12 @@ services:
       postgres_pass: '{{postgres_pass}}'
       postgres_db: '{{postgres_db}}'
       ipfs: https://api.thegraph.com/ipfs/
-      ethereum: >-
-        aurora-testnet:https://testnet.aurora.dev/
-
-        celo-alfajores-testnet:https://alfajores-forno.celo-testnet.org
-
+      ethereum: |-
         celo-mainnet:https://forno.celo.org
-
-        evmos-testnet:https://41d67fdgs4.execute-api.ap-south-1.amazonaws.com/v0/evmos
-
-        findora-testnet:https://ev2awpyss5.execute-api.ap-south-1.amazonaws.com/v0/findora
-
-        gnosis-mainnet:https://rpc.gnosischain.com/
-
         goerli-testnet:https://goerli.infura.io/v3/{{infura_key}}
-
-        harmony-mainnet:https://api.harmony.one
-
-        harmony-testnet:https://api.s0.pops.one
-
-        klaytn-mainnet:https://public-node-api.klaytnapi.com/v1/cypress
-
-        klaytn-testnet:https://api.baobab.klaytn.net:8651
-
-        kovan:https://kovan.infura.io/v3/{{infura_key}}
-
-        metis-mainnet:https://andromeda.metis.io/?owner=1088
-
-        metis-testnet:https://stardust.metis.io/?owner=588
-
-        moonbase-alpha:https://rpc.api.moonbase.moonbeam.network
-
-        neon-devnet:http://neon-devnet-rpc.questbook.app:9090/solana
-
-        optimism-kovan:https://optimism-kovan.infura.io/v3/{{infura_key}}
-
         optimism-mainnet:https://optimism-mainnet.infura.io/v3/{{infura_key}}
-
         polygon-mainnet:https://polygon-mainnet.infura.io/v3/{{infura_key}}
-
         polygon-mainnet:https://polygon-mainnet.g.alchemy.com/v2/{{alchemy_key}}
-
-        polygon-mumbai:https://polygon-mumbai.infura.io/v3/{{infura_key}}
-
-        rinkeby:https://rinkeby.infura.io/v3/{{infura_key}}
-
-        telos-mainnet:https://mainnet.telos.net/evm
-
-        telos-testnet:https://testnet.telos.net/evm
       GRAPH_ALLOW_NON_DETERMINISTIC_IPFS: 'true'
       EXPERIMENTAL_SUBGRAPH_VERSION_SWITCHING_MODE: synced
       ETHEREUM_BLOCK_BATCH_SIZE: '500'
