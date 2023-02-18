@@ -15,7 +15,7 @@ services:
       postgres_db: '{{postgres_db}}'
       ipfs: https://api.thegraph.com/ipfs/
       ethereum: |-
-        celo-mainnet:https://forno.celo.org
+        celo-mainnet:https://celo-mainnet.infura.io/v3/{{infura_key}}
         goerli-testnet:https://goerli.infura.io/v3/{{infura_key}}
         optimism-mainnet:https://optimism-mainnet.infura.io/v3/{{infura_key}}
         polygon-mainnet:https://polygon-mainnet.infura.io/v3/{{infura_key}}
