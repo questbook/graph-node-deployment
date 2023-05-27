@@ -22,7 +22,7 @@ jobs:
       run: npm install mustache js-yaml -g
     
     - name: Save config from secrets
-      run: echo "${{secrets.CONFIG_2}}" > config.yaml
+      run: echo "${{secrets.CONFIG}}" > config.yaml
 
     - name: Prepare docker compose
       run: sh prepare-docker-compose.sh
