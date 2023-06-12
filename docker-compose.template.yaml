@@ -13,7 +13,7 @@ services:
       postgres_user: '{{postgres_user}}'
       postgres_pass: '{{postgres_pass}}'
       postgres_db: '{{postgres_db}}'
-      ipfs: 'ipfs:5001'
+      ipfs: https://api.thegraph.com/ipfs/
       ethereum: |-
         celo-mainnet:https://forno.celo.org
         goerli-testnet:https://goerli.infura.io/v3/{{infura_key}}
@@ -29,7 +29,3 @@ services:
       ETHEREUM_POLLING_INTERVAL: '1000'
       ETHEREUM_REORG_THRESHOLD: '1'
       GRAPH_REMOVE_UNUSED_INTERVAL: '360'
-  ipfs:
-    image: ipfs/kubo:latest
-    ports:
-      - '5001:5001'
